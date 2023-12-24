@@ -20,4 +20,9 @@ public class UserController {
     public ResponseEntity<User> createNewUser(@RequestBody UserRequest userRequest) {
         return userService.createUserFromRequest(userRequest);
     }
+
+    @PostMapping("/login")
+    public ResponseEntity<User> getUser(@RequestBody UserRequest userRequest) {
+        return userService.userLogin(userRequest);
+    }
 }
