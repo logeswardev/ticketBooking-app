@@ -11,8 +11,8 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long userid;
 
-    @Column(name = "emailId")
-    String emailId;
+    @Column(name = "emailAddress")
+    String emailAddress;
 
     @Column(name = "firstName")
     String firstName;
@@ -31,12 +31,12 @@ public class User {
         this.userid = userid;
     }
 
-    public String getEmailId() {
-        return emailId;
+    public String getEmailAddress() {
+        return emailAddress;
     }
 
-    public void setEmailId(String emailId) {
-        this.emailId = emailId;
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
     }
 
     public String getFirstName() {
